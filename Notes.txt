@@ -1,0 +1,63 @@
+### Get all of my Clover Themes collection (currently 60+).
+Please note that you have to get "git" installed before proceeding.
+
+	sudo apt install git \\To install "git" from stable channel
+	which git \\Check if "git" is already installed (usually on /usr/bin/git)
+	git --version \\Showing installed "git" version (eg. git version 2.xx.x).
+
+... Clone my whole Themes repo:
+	git clone https://github.com/badruzeus/MyCloverThemes
+
+... then run:
+
+	ls ~/
+	cd ~/MyCloverThemes 
+	chmod +x MyCloverThemes.sh 
+	./MyCloverThemes.sh
+
+
+### Get specific Theme only (for "Name" just take a look at "/Screenshots/" dir from my repo):
+
+	cd ~/Desktop && git archive --remote=git://git.code.sf.net/p/cloverefiboot/themes HEAD themes/Name | tar -x -v
+
+
+### How to install Clover Themes:
+EFI Partition is protective (read-only) for current user, so you've to run your File Manager with root access (read-write).
+	sudo nautilus \\For example under Ubuntu (be really carefull!)
+
+All downloaded themes are placed on "~/Desktop/themes"
+1. With root access, move your choosen theme to "/EFI/CLOVER/themes/" dir
+2. Open your /EFI/CLOVER/config.plist using Text Editor application (gedit, Geany, etc.)
+3. Go to "GUI - Themes" section, for example to activate "Gothic" theme:
+
+	<key>GUI</key>
+	<dict>
+		...
+		<key>Theme</key>
+		<string>Gothic</string>
+		...
+	</dict>
+
+4. Save your changes && reboot to test.
+
+=======================================
+
+### FAQ:
+
+Q:	Why Clover GUI doesn't fit on my Display?
+A:	Go to "GUI" section - ScreenResolution, and use your display native resolution string.
+	For example with FullHD 1080p display:
+
+	<key>GUI</key>
+	<dict>
+		...
+		<key>ScreenResolution</key>
+		<string>1920x1080</string>
+		...
+	</dict>
+
+	Note that Nvidia has limited display resolutions mode with VESA (eg. 1366x768 can use 1360x768 instead).
+	If for unknown reason this mothod's not working, check your BIOS Option and disable "CSM Support". Or...
+	
+	cd /EFI/CLOVER/drivers64UEFI/
+	mv CsmVideoDxe-64.efi CsmVideoDxe-64.bak
