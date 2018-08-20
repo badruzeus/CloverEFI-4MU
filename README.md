@@ -1,4 +1,4 @@
-# CloverEFI-4Tux-Man
+# CloverEFI-Tuxifier
 ### Introduction 
 First, I have to tell that Clover binary used on this repo is same as what you could get from <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/). So, it definitely is able to boot OS X / macOS as well (if your mach is Hackintosh compatible).
  
