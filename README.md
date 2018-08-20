@@ -3,7 +3,7 @@ _(...on progress)_
  
 First, I have to tell that Clover binary used on this repo is same as what you could get from <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/). So, it definitely is able to boot OS X / macOS as well (if your mach is Hackintosh compatible).
  
-But, I decided to make a separated topic for answering a question: "How to use Clover w/o installing macOS on UEFI PC?". As we've known, provided Clover [Package](https://en.wikipedia.org/wiki/.pkg) is installable on Hackintosh based with macOS running.
+But, I decided to make a separated topic for answering a question: "How to use Clover w/o installing macOS on UEFI PC?". As we've known, provided Clover [Package](https://en.wikipedia.org/wiki/.pkg) is installable only on a Hackintosh based with macOS running.
 
 ### What is Clover?
 _(...on progress)_
