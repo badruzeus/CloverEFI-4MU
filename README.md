@@ -19,7 +19,8 @@ Some of Clover features are:
 However, following this specific project you have to meet these conditions:
 - [x] Only for PC (Desktop / Laptop) with UEFI firmware capable: Check your BIOS Features
 - [x] Make sure that your PC is able to reach Clover GUI:
-      Create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows then boot from it for testing purpose
+      Create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows.
+      <p>Then boot from it for testing purpose
 - [x] Basic knowledge about bootloader and UEFI / BIOS settings
 - [x] Pre-installed Ubuntu Linux (and it's flavours) or LiveMode
 - [x] Make a backup of whole "Internal EFI Partition" is highly recommended.
@@ -48,7 +49,9 @@ However, following this specific project you have to meet these conditions:
    - Done! Congratulations; Try Clover before you die! 
  
 ### Bugs & Troubleshooting
+- [ ] Press "F1" for Clover Help (Shortcut keys, Functions, etc.)
 - [ ] Provided "ShellX64U.efi" is not accessible for some UEFI firmwares 
-
+ 
+ 
 ### Credits
 [Apple](https://www.apple.com) / [Canonical](https://www.ubuntu.com) / [Microsoft](https://www.microsoft.com/en-us/windows) / [Clover](https://sourceforge.net/projects/cloverefiboot) / [cvad](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) / [fusion71au](http://www.insanelymac.com/forum/topic/310038-manually-install-clover-and-configure-boot-priority-with-easyuefi-in-windows/#entry2200235) / [InsanelyMac](https://www.insanelymac.com/forum), [Olarila](http://olarila.com/forum) and [OSXLatitude](https://osxlatitude.com/forums) Forum.
