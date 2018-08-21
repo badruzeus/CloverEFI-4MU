@@ -28,7 +28,7 @@ However, following this specific project you have to meet these conditions:
 ### How to Use
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
 2. (Optional) My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes`
-   <p>Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/docs/) for Theming how to
+   Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/docs/) for Theming how to
 3. Then, just follow provided "Video Tutorial" below: (be really carefull when accessing EFI Partition with root access)
  
    embed_url("https://www.youtube.com/watch?v=123456789_0")
