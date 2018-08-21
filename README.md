@@ -16,13 +16,13 @@ Some of Clover features are:
 - [x] ... and much more. [Here's](https://sourceforge.net/projects/cloverefiboot/) for details.
  
 ### Requirements
-However, to follow this specific project you have to meet these conditions:
+However, following this specific project you have to meet these conditions:
 - [x] Only for PC (Desktop / Laptop) with UEFI firmware capable: Check your BIOS Features
 - [x] Make sure that your PC is able to reach Clover GUI:
-      Test it by creating USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows then boot from it
+      Create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows then boot from it for testing purpose
 - [x] Basic knowledge about bootloader and UEFI / BIOS settings
 - [x] Pre-installed Ubuntu Linux (and it's flavours) or LiveMode
-- [x] Make a backup of whole "Internal EFI Partition" is recommended.
+- [x] Make a backup of whole "Internal EFI Partition" is highly recommended.
 
 ### How to Use
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
@@ -30,10 +30,26 @@ However, to follow this specific project you have to meet these conditions:
    Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/docs/) for Theming how to
 3. Then, just follow provided "Video Tutorial" below: (be really carefull when accessing EFI Partition with root access)
  
-embed_url("https://www.youtube.com/watch?v=XHECZDy_ctg")
+   Video Chapters:
+   - GUID Partition Scheme (GPT) with EFI Partition
+   - Cloning the repos using git via Terminal
+   - Manually placing "CLOVER" to EFI Partition using Nautilus (root)
+   - Clover GUI configurations: Create Custom Entries for Windows, Ubuntu and PhoenixOS
+   - Hiding Lecacy (non-bootable) Volumes for UEFI
+   - Setting up "Native Screen Resolution"
+   - Using Clover Theme
+   - Save "/EFI/CLOVER/config.plist" changes
+   - Adding "CLOVER" as New Boot Entry on UEFI firmware
+   - Setting up "CLOVER" as 1st Boot order
+   - Rebooting PC and Boot with Clover
+   - Clover Themes preview (with animations)
+   - Done! Congratulations; Try Clover before you die! 
+
  
-### FAQ & Troubleshooting
-_(...Coming soon)_
+embed_url("https://www.youtube.com/watch?v=123456789_0")
+ 
+### Bugs & Troubleshooting
+- [ ] Provided "ShellX64U.efi" is not accessible for some UEFI firmwares 
 
 ### Credits
 [Apple](https://www.apple.com) / [Canonical](https://www.ubuntu.com) / [Microsoft](https://www.microsoft.com/en-us/windows) / [Clover](https://sourceforge.net/projects/cloverefiboot) / [cvad](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) / [fusion71au](http://www.insanelymac.com/forum/topic/310038-manually-install-clover-and-configure-boot-priority-with-easyuefi-in-windows/#entry2200235) / [InsanelyMac](https://www.insanelymac.com/forum), [Olarila](http://olarila.com/forum) and [OSXLatitude](https://osxlatitude.com/forums) Forum.
