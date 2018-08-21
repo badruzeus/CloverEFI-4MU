@@ -1,6 +1,6 @@
 # CloverEFI-4MU
 ### Introduction 
-First, I have to tell that Clover binary used on this repo is same as what you could get from <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/). So, it definitely is able to boot OS X / macOS as well (if your mach is Hackintosh compatible, with advanced configs for sure).
+First, I have to tell that Clover binary used on this repo is same as what you could get from <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/). So, it definitely is able to boot OS X as well (if your mach is Hackintosh compatible, with advanced configs for sure).
  
 But, I decided to create a separated topic for answering a question: "How to use Clover w/o installing macOS on UEFI PC?". As we've known, provided Clover [Package](https://en.wikipedia.org/wiki/.pkg) is installable only on a Hackintosh based with macOS running.
  
@@ -18,7 +18,8 @@ Some of Clover features are:
 ### Requirements
 However, to follow this specific project you have to meet these conditions:
 - [x] Only for PC (Desktop / Laptop) with UEFI firmware capable: Check your BIOS Features
-- [x] Make sure that your PC is able to reach Clover GUI: Test it by creating USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows then boot from it
+- [x] Make sure that your PC is able to reach Clover GUI:
+      Test it by creating USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows then boot from it
 - [x] Basic knowledge about bootloader and UEFI / BIOS settings
 - [x] Pre-installed Ubuntu Linux (and it's flavours) or LiveMode
 - [x] Make a backup of whole "Internal EFI Partition" is recommended.
