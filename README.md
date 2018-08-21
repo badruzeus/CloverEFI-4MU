@@ -30,6 +30,8 @@ However, following this specific project you have to meet these conditions:
    Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/docs/) for Theming how to
 3. Then, just follow provided "Video Tutorial" below: (be really carefull when accessing EFI Partition with root access)
  
+   embed_url("https://www.youtube.com/watch?v=123456789_0")
+     
    Video Chapters:
    - GUID Partition Scheme (GPT) with EFI Partition
    - Cloning the repos using git via Terminal
@@ -44,9 +46,6 @@ However, following this specific project you have to meet these conditions:
    - Rebooting PC and Boot with Clover
    - Clover Themes preview (with animations)
    - Done! Congratulations; Try Clover before you die! 
-
- 
-embed_url("https://www.youtube.com/watch?v=123456789_0")
  
 ### Bugs & Troubleshooting
 - [ ] Provided "ShellX64U.efi" is not accessible for some UEFI firmwares 
