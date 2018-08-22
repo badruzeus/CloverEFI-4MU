@@ -52,8 +52,8 @@ However, following this specific project you have to meet these conditions:
 - [ ] Press "F1" for Clover Help (Shortcut keys, Functions, etc.)
 - [ ] Provided "ShellX64U.efi" is not accessible for some UEFI firmwares
 - [ ] Depends on your UEFI firmware, for adding CLOVER as "New Boot Entry" is usually:
-      - `fs0:\efi\clover\cloverx64.efi` \\or..
-      - `\efi\clover\cloverx64.efi`
+   - `fs0:\efi\clover\cloverx64.efi` or
+   - `\efi\clover\cloverx64.efi`
  
  
 ### Credits
