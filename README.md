@@ -38,7 +38,7 @@ However, following this specific project you have to meet these conditions:
    - Cloning the repos using git via Terminal
    - Manually placing "CLOVER" to EFI Partition using Nautilus (root)
    - Clover GUI configurations: Create Custom Entries for Windows, Ubuntu and PhoenixOS
-   - Hiding Lecacy (non-bootable) Volumes for UEFI
+   - Hiding Legacy (non-bootable) Volumes for UEFI
    - Setting up "Native Screen Resolution"
    - Clover Theme installation
    - Save "/EFI/CLOVER/config.plist" changes
