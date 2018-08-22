@@ -4,7 +4,7 @@ First, I have to tell that Clover binary used on this repo is same as what you c
  
 But, I decided to create a separated topic for answering a question: "How to use Clover w/o installing macOS on PC with UEFI firmware?". As we've known, provided Clover [Package](https://en.wikipedia.org/wiki/.pkg) is installable only on a Hackintosh based with macOS running.
  
-Simply, <b>"CloverEFI-4MU"</b> as project here's: Clover bootloader for non-Hackintosh-able UEFI PC with Manual installation via Ubuntu Linux, using minimalized sample config, efi drivers, etc. I make it to be specific with UEFI only for easier configs compared to Legacy (though with GUID Partition Scheme: GPT, is actually able to.. but I don't wanna mess your current legacy bootloader settings), as well as via Ubuntu is to keep focus on the guides. Uploaded ["CLOVER"](https://github.com/badruzeus/CloverEFI-4MU/CLOVER) folder is just for guide's supplement.
+Simply, <b>"CloverEFI-4MU"</b> as project here's: Clover bootloader for non-Hackintosh-able UEFI PC with Manual installation via Ubuntu Linux, using minimalized sample config, efi drivers, etc. I make it to be specific with UEFI only for easier configs compared to Legacy (though with GUID Partition Scheme: GPT, is actually able to.. but I don't wanna mess your current legacy bootloader settings), as well as via Ubuntu is to keep focus on guides. Uploaded ["CLOVER"](https://github.com/badruzeus/CloverEFI-4MU/CLOVER) folder is just for guide supplement.
 
 ### What is Clover?
 Clover is one of bootloaders developed by Slice, Apianti, BlackOSX, Dmazar, Blusseau, and other devs with great community for booting OS X, Windows and Linux on Mac or PC with UEFI / BIOS firmware.
@@ -16,20 +16,20 @@ Some of Clover features are:
 - [x] ... and much more. [Here's](https://sourceforge.net/projects/cloverefiboot/) for details.
  
 ### Requirements
-However, following this specific project you have to meet these conditions:
+However, following this project you have to meet conditions below:
 - [x] Only for PC (Desktop / Laptop) with UEFI firmware capable: Check your BIOS Features
 - [x] Make sure that your PC is able to reach Clover GUI:
       Create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows.
-      <p>Then boot from it for testing purpose
+      <p>Then boot from it for testing purpose (UEFI Mode)
 - [x] Basic knowledge about bootloader and UEFI / BIOS settings
-- [x] Pre-installed Ubuntu Linux (and it's flavours) or LiveMode
+- [x] Pre-installed Ubuntu Linux (and it's flavours) or Live Mode
 - [x] Make a backup of whole "Internal EFI Partition" is highly recommended.
 
 ### How to Use
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
 2. (Optional) My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes`
-   Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/docs/) for Theming how to
-3. Then, just follow provided "Video Tutorial" below: (be really carefull when accessing EFI Partition with root access)
+   Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
+3. Then, just follow provided ["Video Tutorial"](https://youtu.be/YPWWinxwOcY) below: (be really carefull when accessing EFI Partition with root access)
  
    [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/CloverEFI-4MU.png)](https://youtu.be/YPWWinxwOcY)
 
@@ -54,6 +54,7 @@ However, following this specific project you have to meet these conditions:
 - [ ] Depends on your UEFI firmware, for adding CLOVER as "New Boot Entry" is usually:
    - `fs0:\efi\clover\cloverx64.efi` or
    - `\efi\clover\cloverx64.efi`
+- [ ] More linux distros support is coming soon..
  
  
 ### Credits
