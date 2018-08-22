@@ -40,7 +40,7 @@ However, following this specific project you have to meet these conditions:
    - Clover GUI configurations: Create Custom Entries for Windows, Ubuntu and PhoenixOS
    - Hiding Lecacy (non-bootable) Volumes for UEFI
    - Setting up "Native Screen Resolution"
-   - Using Clover Theme
+   - Clover Theme installation
    - Save "/EFI/CLOVER/config.plist" changes
    - Adding "CLOVER" as New Boot Entry on UEFI firmware
    - Setting up "CLOVER" as 1st Boot order
