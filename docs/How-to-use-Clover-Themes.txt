@@ -28,7 +28,7 @@ EFI Partition is protective (read-only) for current user, so you've to run your 
 All downloaded themes are placed on "~/Desktop/themes"
 1. With root access, move your choosen theme to "/EFI/CLOVER/themes/" dir
 2. Open your /EFI/CLOVER/config.plist using Text Editor application (gedit, Geany, etc.)
-3. Go to "GUI - Themes" section, for example to activate "Gothic" theme:
+3. Go to "GUI - Theme" section, for example to activate "Gothic" theme:
 
 	<key>GUI</key>
 	<dict>
