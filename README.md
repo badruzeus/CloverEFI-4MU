@@ -31,7 +31,7 @@ However, following this specific project you have to meet these conditions:
    Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/docs/) for Theming how to
 3. Then, just follow provided "Video Tutorial" below: (be really carefull when accessing EFI Partition with root access)
  
-   embed_url("https://www.youtube.com/watch?v=123456789_0")
+   [![CloverEFI-4MU](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
    Video Chapters:
    - GUID Partition Scheme (GPT) with EFI Partition
