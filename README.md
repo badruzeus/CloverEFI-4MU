@@ -4,7 +4,7 @@ First, I have to tell that Clover binary used on this repo is same as what you c
  
 But, I decided to create a separated topic for answering a question: "How to use Clover w/o installing macOS on PC with UEFI firmware?". As we've known, provided Clover [Package](https://en.wikipedia.org/wiki/.pkg) is installable only on a Hackintosh based with macOS running.
  
-Simply, <b>"CloverEFI-4MU"</b> as project here's: Clover bootloader for non-Hackintosh-able UEFI PC with Manual installation via Ubuntu Linux, using minimalized sample config, efi drivers, etc. I make it to be specific with UEFI only for easier configs compared to Legacy (though with GUID Partition Scheme: GPT, is actually able to.. but I don't wanna mess your current legacy bootloader settings), as well as via Ubuntu is to keep focus on the guides. Uploaded "CLOVER" folder is just for guide's supplement.
+Simply, <b>"CloverEFI-4MU"</b> as project here's: Clover bootloader for non-Hackintosh-able UEFI PC with Manual installation via Ubuntu Linux, using minimalized sample config, efi drivers, etc. I make it to be specific with UEFI only for easier configs compared to Legacy (though with GUID Partition Scheme: GPT, is actually able to.. but I don't wanna mess your current legacy bootloader settings), as well as via Ubuntu is to keep focus on the guides. Uploaded ["CLOVER"](https://github.com/badruzeus/CloverEFI-4MU/CLOVER) folder is just for guide's supplement.
 
 ### What is Clover?
 Clover is one of bootloaders developed by Slice, Apianti, BlackOSX, Dmazar, Blusseau, and other devs with great community for booting OS X, Windows and Linux on Mac or PC with UEFI / BIOS firmware.
