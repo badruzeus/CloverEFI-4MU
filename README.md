@@ -1,6 +1,6 @@
 # CloverEFI-4MU
 ### Introduction 
-First, I have to tell that Clover binary used on this repo is same as what you could get from <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/). So, it definitely is able to boot OS X as well (if your mach is Hackintosh compatible, with advanced configs for sure).
+First, I have to tell that Clover binary used on this repo is same as what you could get from <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/). The differences maybe compiler and host version (I use Xcode 8.2.1 under Mac OS X 10.11.6) for build process. So, it definitely is able to boot OS X as well (if your mach is Hackintosh compatible, with advanced configs for sure).
  
 But, I decided to create a separated topic for answering a question: "How to use Clover w/o installing macOS on PC with UEFI firmware?". As we've known, provided Clover [Package](https://en.wikipedia.org/wiki/.pkg) is installable only on a Hackintosh based with macOS running.
  
