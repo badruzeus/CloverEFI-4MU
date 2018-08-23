@@ -28,7 +28,7 @@ However, following this project you have to meet conditions below:
 ### How to Use
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
 2. (Optional) My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes`
-   Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
+   - Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
 3. Then, just follow provided ["Video Tutorial"](https://youtu.be/YPWWinxwOcY) below: (be really carefull when accessing EFI Partition with root access)
  
    [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/CloverEFI-4MU.png)](https://youtu.be/YPWWinxwOcY)
