@@ -7,6 +7,8 @@ But, I decided to create a separated topic for answering a question: "How to use
 Simply, <b>"CloverEFI-4MU"</b> as project here's: Clover bootloader for non-Hackintosh-able UEFI PC with Manual installation via Ubuntu Linux, using minimalized sample config, efi drivers, etc. I make it to be specific with UEFI only for easier configs compared to Legacy (though with GUID Partition Scheme: GPT, is actually able to.. but I don't wanna mess your current legacy bootloader settings), as well as via Ubuntu is to keep focus on guides. Uploaded ["CLOVER"](https://github.com/badruzeus/CloverEFI-4MU/CLOVER) folder is just for guide supplement.
 
 ### What is Clover?
+<img src="/img/CloverEFI-Bootloader.png?raw=true" alt="Clover EFI Bootloader" align="right">
+
 Clover is one of bootloaders developed by Slice, Apianti, BlackOSX, Dmazar, Blusseau, and other devs with great community for booting OS X, Windows and Linux on Mac or PC with UEFI / BIOS firmware.
  
 Some of Clover features are:
@@ -31,7 +33,7 @@ However, following this project you have to meet conditions below:
    - Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
 3. Then, just follow provided ["Video Tutorial"](https://youtu.be/YPWWinxwOcY) below: (be really carefull when accessing EFI Partition with root access)
  
-   [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/CloverEFI-4MU.png)](https://youtu.be/YPWWinxwOcY)
+   [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/img/CloverEFI-4MU.png)](https://youtu.be/YPWWinxwOcY)
 
    Video Chapters:
    - GUID Partition Scheme (GPT) with EFI Partition
