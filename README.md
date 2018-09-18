@@ -37,9 +37,9 @@ However, following this project you have to meet conditions below:
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
 2. My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes` (Optional)
    - Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
-3. Then, just follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=4KhGglu1T1Y) below: (be really carefull when accessing EFI Partition with root access)
+3. Then, just follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=YPWWinxwOcY) below: (be really carefull when accessing EFI Partition with root access)
  
-   [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/img/CloverEFI-4MU.png)](https://www.youtube.com/watch?v=4KhGglu1T1Y)
+   [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/img/CloverEFI-4MU.png)](https://www.youtube.com/watch?v=YPWWinxwOcY)
 
    Video Chapters:
    - GUID Partition Scheme (GPT) with EFI Partition
