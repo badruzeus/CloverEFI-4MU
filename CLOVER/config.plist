@@ -4,6 +4,112 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<true/>
+		<key>DSDT</key>
+		<dict>
+			<key>Fixes</key>
+			<dict>
+				<key>DeleteUnused</key>
+				<true/>
+				<key>FixHPET</key>
+				<true/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixMutex</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixShutdown</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
+			</dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>HDAS to HDEF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SERBUw==
+					</data>
+					<key>Replace</key>
+					<data>
+					SERFRg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>HECI to IMEI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SEVDSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					SU1FSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>GLAN to GIGE</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0xBTg==
+					</data>
+					<key>Replace</key>
+					<data>
+					R0lHRQ==
+					</data>
+				</dict>
+			</array>
+		</dict>
+		<key>DropTables</key>
+		<array>
+			<dict>
+				<key>Signature</key>
+				<string>DMAR</string>
+			</dict>
+		</array>
+		<key>FixHeaders</key>
+		<true/>
+		<key>FixMCFG</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -14,17 +120,27 @@
 				<true/>
 				<key>PStates</key>
 				<true/>
+				<key>PluginType</key>
+				<false/>
 			</dict>
+			<key>NoDynamicExtract</key>
+			<true/>
+			<key>NoOemTableId</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>-v -no_compat_check</string>
 		<key>DefaultLoader</key>
 		<string>CLOVERX64.efi</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
+		<key>NeverDoRecovery</key>
+		<true/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>NoEarlyProgress</key>
@@ -36,9 +152,27 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>AFGLowPowerState</key>
+			<true/>
+			<key>Inject</key>
+			<integer>1</integer>
+			<key>ResetHDA</key>
+			<true/>
+		</dict>
+		<key>FakeID</key>
+		<dict>
+			<key>IntelGFX</key>
+			<string>0x12345678</string>
+		</dict>
 		<key>USB</key>
 		<dict>
+			<key>AddClockID</key>
+			<true/>
 			<key>FixOwnership</key>
+			<true/>
+			<key>Inject</key>
 			<true/>
 		</dict>
 	</dict>
@@ -117,10 +251,24 @@
 		<key>ScreenResolution</key>
 		<string>1366x768</string>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>Clovernity</string>
+	</dict>
+	<key>Graphics</key>
+	<dict>
+		<key>DualLink</key>
+		<integer>0</integer>
+	</dict>
+	<key>KernelAndKextPatches</key>
+	<dict>
+		<key>AppleIntelCPUPM</key>
+		<true/>
+		<key>AppleRTC</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>InjectKexts</key>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
