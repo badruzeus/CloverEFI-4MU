@@ -186,7 +186,7 @@
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Windows Sample</string>
+					<string>Windows 10</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -194,7 +194,7 @@
 					<key>Type</key>
 					<string>Windows</string>
 					<key>Volume</key>
-					<string>ABCD1234-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -202,7 +202,7 @@
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Ubuntu Sample</string>
+					<string>Ubuntu 18.10</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -210,7 +210,7 @@
 					<key>Type</key>
 					<string>Linux</string>
 					<key>Volume</key>
-					<string>ABCD1234-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -218,7 +218,7 @@
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>PhoenixOS Sample</string>
+					<string>PhoenixOS x86</string>
 					<key>Hidden</key>
 					<false/>
 					<key>Ignore</key>
@@ -228,7 +228,231 @@
 					<key>Type</key>
 					<string>Linux</string>
 					<key>Volume</key>
-					<string>ABCD1234-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Arguments</key>
+					<string></string>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>macOS Mojave</string>
+					<key>Hidden</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>InjectKexts</key>
+					<true/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Path</key>
+					<string>\System\Library\CoreServices\boot.efi</string>
+					<key>Type</key>
+					<string>OSX</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Arguments</key>
+					<string></string>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Recovery HD</string>
+					<key>Hidden</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>InjectKexts</key>
+					<true/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Path</key>
+					<string>\com.apple.recovery.boot\boot.efi</string>
+					<key>Type</key>
+					<string>OSXRecovery</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Arch Linux</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\arch\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Debian Linux</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\debian\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Deepin 15.7</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\Deepin\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Elementary 5.0</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\elementary\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Fedora Core</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\Fedora\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Kali Linux 2018</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\kali\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Linux Mint 19</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\LinuxMint\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Manjaro 17</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\Manjaro\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>RedHat Enterprise</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\RedHat\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Xubuntu 18.10</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\xubuntu\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>ZorinOS 12</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\zorin\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
+					<key>Volume</key>
+					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -236,8 +460,10 @@
 		</dict>
 		<key>Hide</key>
 		<array>
-			<string>WINDOWS10-XXXX-0000-YYYY-0LEGACY-NTFS</string>
-			<string>DATA-NTFS-YYYY-0000-XXXX-ABCDEFGH1234</string>
+			<string>LINUXEXT-XXXX-0000-YYYY-NONBOOTABLEX</string>
+			<string>WINNTFSX-YYYY-0000-XXXX-NONBOOTABLEX</string>
+			<string>DATANTFS-XXXX-0000-YYYY-NONBOOTABLEX</string>
+			<string>PHOENIXT-YYYY-0000-XXXX-NONBOOTABLEX</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -270,6 +496,8 @@
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
+		<true/>
+		<key>NoCaches</key>
 		<true/>
 	</dict>
 </dict>
