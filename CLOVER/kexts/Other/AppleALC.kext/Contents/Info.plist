@@ -623,6 +623,26 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
+					<string>Realtek ALC230 for Lenovo Ideapad 320 by maiconjs</string>
+					<key>CodecID</key>
+					<integer>283902512</integer>
+					<key>ConfigData</key>
+					<data>
+					AhccEAIXHRACFx4rAhcfBAFHHCABRx0BAUce
+					FwFHH5ABJxwwAScdAQEnHqABJx+QAZccQAGX
+					HRABlx6LAZcfBA==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>20</integer>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
 					<string>Mirone - Realtek ALC233</string>
 					<key>CodecID</key>
 					<integer>283902515</integer>
@@ -894,6 +914,32 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>11</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>the-braveknight - Realtek ALC235 for Lenovo Legion Y520</string>
+					<key>CodecID</key>
+					<integer>283902517</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccQAEnHQABJx6gAScfsAFHHBABRx0AAUce
+					FwFHH5ABRwwCAZccMAGXHRABlx6BAZcfAAIX
+					HGACFx0QAhceIQIXHwA=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>14</integer>
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
@@ -4666,6 +4712,35 @@
 					<data>
 					AwAAAA==
 					</data>
+					<key>Codec</key>
+					<string>Realtek ALC887-VD AD0 for Asus Z97M-PLUS/BR by maiconjs</string>
+					<key>CodecID</key>
+					<integer>283904135</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccAAFHHUABRx4BAUcfAQFnHBABZx1gAWce
+					AQFnHwEBVxwgAVcdEAFXHgEBVx8BAXccMAF3
+					HSABdx4BAXcfAQG3HEABtx1AAbceIQG3HwIB
+					FxxQARcdAQEXHkYBFx+ZAYccYAGHHZABhx6g
+					AYcfkAGnHHABpx0wAacegQGnHwEBlxyAAZcd
+					kAGXHoEBlx8CAUcMAg==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>20</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
 					<key>CodecID</key>
 					<integer>283904135</integer>
 					<key>Comment</key>
@@ -4686,6 +4761,33 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>33</integer>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Realtek ALC887-VD for Asus B85-ME by maiconjs</string>
+					<key>CodecID</key>
+					<integer>283904135</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccAAFHHUABRx4BAUcfAQG3HBABtx1AAbce
+					IQG3HwIBhxwgAYcdkAGHHqABhx+QAaccMAGn
+					HTABpx6BAacfAQGXHEABlx2QAZcegQGXHwIB
+					RwwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>40</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
