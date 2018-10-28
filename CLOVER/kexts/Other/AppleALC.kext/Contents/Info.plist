@@ -2892,6 +2892,36 @@
 					<key>CodecID</key>
 					<integer>283902594</integer>
 					<key>Comment</key>
+					<string>Custom ALC282 lenovo y430p by loverto</string>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6mAScfkAFHHPABRx0AAUcd
+					AAFHH0ABdxzwAXcdAAF3HgABdx9AAYcccAGH
+					HRABhx6BAYcfAQGHHAIBlxzwAZcdAAGXHgAB
+					lx9AAacc8AGnHQABpx4AAacfQAG3HEABtx0B
+					AbceFwG3H5AB1xzwAdcdAAHXHgAB1x9AAecc
+					YAHnHRAB5x5EAecfAQIXHFACFx0QAhceIQIX
+					HwECFxwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>22</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>CodecID</key>
+					<integer>283902594</integer>
+					<key>Comment</key>
 					<string>Skvo ALC282 Acer Aspire on IvyBridge by Andrey1970</string>
 					<key>ConfigData</key>
 					<data>
@@ -5556,6 +5586,35 @@
 					<key>CodecID</key>
 					<integer>283904146</integer>
 					<key>Comment</key>
+					<string>MacPeet - alc892 for MSi Z97S SLI Krait Edition</string>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHUABRx4RAUcfkQG3HCABRwwCAbcd
+					QAG3HiEBtx8CAbcMAgGHHDABhx2QAYceoQGH
+					H5EBVxxQAVcdEAFXHgEBVx8BAWccYAFnHWAB
+					Zx4BAWcfAQF3HHABdx0gAXceAQF3HwEBlxyA
+					AZcdkAGXHoEBlx8CAacckAGnHTABpx6BAacf
+					AQ==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>15</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>CodecID</key>
+					<integer>283904146</integer>
+					<key>Comment</key>
 					<string>ALC892 for Clevo P751DMG by Cryse Hillmes</string>
 					<key>ConfigData</key>
 					<data>
@@ -6949,7 +7008,7 @@
 					<key>Codec</key>
 					<string>InsanelyDeepak - Conexant CX20756</string>
 					<key>CodecID</key>
-					<integer>351359247</integer>
+					<integer>351359252</integer>
 					<key>ConfigData</key>
 					<data>
 					AXccEAF3HQEBdx4XAXcfkAGnHCABpx0BAace
