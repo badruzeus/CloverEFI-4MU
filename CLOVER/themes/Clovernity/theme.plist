@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Badruzeus</string>
 	<key>Description</key>
-	<string>Clover theme with Ubuntu's Unity look and feel. Version: 2.2</string>
+	<string>Clover theme with Ubuntu's Unity look and feel. Version: 2.3</string>
 	<key>Theme</key>
 	<dict>
 		<key>Anime</key>
@@ -104,7 +104,7 @@
 			<key>ChangeNonSelectedGrey</key>
 			<false/>
 			<key>Color</key>
-			<string>0x800040FF</string>
+			<string>0x00000065</string>
 			<key>OnTop</key>
 			<false/>
 			<key>Small</key>
@@ -112,7 +112,7 @@
 		</dict>
 	</dict>
 	<key>Version</key>
-	<string>2.2</string>
+	<string>2.3</string>
 	<key>Year</key>
 	<string>2018</string>
 </dict>
