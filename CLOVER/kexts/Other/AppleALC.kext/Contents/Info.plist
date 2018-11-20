@@ -1229,9 +1229,9 @@
 					<integer>283902549</integer>
 					<key>ConfigData</key>
 					<data>
-					AZcc8AGXHRABlx6BAZcfQQGnHDABpx0BAace
+					AZcc8AGXHRABlx6BAZcfAgGnHDABpx0BAace
 					oAGnH5ABtxwQAbcdAQG3HhcBtx+QAhccIAIX
-					HRACFx4hAhcfAwG3DAICFwwC
+					HRACFx4hAhcfAgG3DAICFwwC
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
@@ -6408,6 +6408,33 @@
 					AwAAAA==
 					</data>
 					<key>CodecID</key>
+					<integer>283906592</integer>
+					<key>CodecName</key>
+					<string>fleaplus - ALC1220 for MSI WT75</string>
+					<key>ConfigData</key>
+					<data>
+					AbccIAG3HQEBtx4XAbcfkAG3DAIBhxxAAYcd
+					EAGHHqEBhx8BAZccQQGXHRQBlx6BAZcfAQGn
+					HE8Bpx0QAacegQGnHwEBJxxQAScdAQEnHmAB
+					Jx+Q
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>15</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>CodecID</key>
 					<integer>283906408</integer>
 					<key>CodecName</key>
 					<string>Toleda -  Realtek ALC S1220A</string>
@@ -6570,8 +6597,8 @@
 					<key>ConfigData</key>
 					<data>
 					AXccEAF3HQABdx4XAXcfkAGnHCABpx0AAace
-					oAGnH5ABlxwwAZcdEAGXHosBlx8BAWccQAFn
-					HRABZx4rAWcfAQF3DAIBZwwC
+					oAGnH5ABlxwwAZcdEAGXHosBlx8BAdccQAHX
+					HRAB1x4rAdcfAQF3DAIB1wwC
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
@@ -7683,6 +7710,28 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>3</integer>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Goldfish64 - STAC9200 for Dell Precision 390</string>
+					<key>CodecID</key>
+					<integer>2206496400</integer>
+					<key>ConfigData</key>
+					<data>
+					AIcc8ACHHQAAhx4AAIcfQACXHPAAlx0AAJce
+					AACXH0AA1xwQANcdEADXHiEA1x8CAOccIADn
+					HQEA5x4QAOcfkAD3HDAA9x0BAPceoAD3H5AB
+					BxxAAQcdEAEHHoEBBx8CARcc8AEXHQABFx4A
+					ARcfQAEnHPABJx0AASceAAEnH0A=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>11</integer>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
