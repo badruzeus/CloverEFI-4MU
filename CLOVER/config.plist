@@ -483,6 +483,13 @@
 	<dict>
 		<key>DualLink</key>
 		<integer>0</integer>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<true/>
+		</dict>
+		<key>PatchVBios</key>
+		<true/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
