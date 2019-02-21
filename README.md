@@ -58,14 +58,74 @@ However, following this project you have to meet conditions below:
 
 --------------------------------------------------------------------------------------------
 
+### Legacy-GPT Installation
+Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/sda1 (EFI System Partition). Check with Terminal: `$ sudo blkid` or `sudo fdisk -l`
+1. Clone the repo, located on ~/CloverEFI-4MU (Home)
+2. Run these Terminal commands:
+   
+   // _Marking /dev/sda as active partition (also useful for MBR scheme)
+   - $ `cd ~/CloverEFI-4MU/BootSectors`
+   - $ `sudo dd if="/dev/sda" bs=512 count=1 >origMBR`
+   - $ `cp origMBR newMBR`
+   - $ `sudo dd if=boot0af of=newMBR bs=440 count=1 conv=notrunc`
+
+   // _Set /dev/sda1 as Primary Boot Record (PBR)
+   - $ `sudo dd if="/dev/sda1" bs=512 count=1 >origPBR`
+   - $ `cp boot1f32 newPBR`
+   - $ `sudo dd if=origPBR of=newPBR skip=3 seek=3 bs=1 count=87 conv=notrunc`
+
+   // _Writing bootsector's changes
+   - $ `sudo dd if=newPBR of="/dev/sda1" bs=512 count=1`
+   - $ `sudo dd if=newMBR of="/dev/sda" bs=512 count=1 conv=nocreat,notrunc`
+
+3. Installing Clover on EFI System Partition (ESP)
+   (Please note that `\EFI\BOOT` dir is not always empty, some linux distros or android maybe placing `grub, kernel or ramdisk` here. If this is your case, just copy Clover `BOOTX64.efi` file, not replacing a whole dir).
+
+   (a) Option 1 via Command Line
+   // _Mounting EFI System Partition
+   - $ `cd ~/`
+   - $ `mkdir esp`
+   - $ `sudo mount -t vfat /dev/sda1 esp`
+
+   // _Copying Clover required files (BOOT & CLOVER)
+   - $ `cd ~/CloverEFI-4MU`
+   - $ `sudo cp boot ~/esp`
+   - $ `sudo cp -r EFI/BOOT ~/esp/EFI`
+   - $ `sudo cp -r EFI/CLOVER ~/esp/EFI`
+
+   (a) Option 2 via File Manager (GUI)
+   - Mount ESP as point (a) first
+   - Terminal: $ `sudo [FileManager]` // File manager could be nautilus, thunar, etc.
+   - Manually copy-paste required files as point (a), be careful!
+   - Terminal: $ `sudo umount ~/esp` if all have done.
+
+--------------------------------------------------------------------------------------------
+
 ### Bugs & Troubleshooting
 - [ ] Press "F1" for Clover Help (Shortcut keys, Functions, etc.)
-- [ ] Provided "ShellX64U.efi" is not accessible for some UEFI firmwares
 - [ ] Depends on your UEFI firmware, for adding CLOVER as "New Boot Entry" is usually:
    - `fs0:\efi\clover\cloverx64.efi` or
    - `\efi\clover\cloverx64.efi`
-- [ ] More linux distros support is coming soon..
- 
+   This is applicable if your firmware has "Boot Entry" Options.
+
+- [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS).
+      On this case, you need manually adding Entry via UEFI Shell.
+      For example adding Clover Entry located on FSX (FSX could be FS0, FS1, etc. depends on your ESP):
+      > map FS*
+      > bcfg boot dump
+      // If `02` is last Boot Entry, add Clover on `03`:
+      > bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"
+      // Of course, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..
+      > If Clover is not set as 1st boot order, you need pressing Combo key (could be F12, Esc, etc)
+      and manually select it once computer powered on.
+
+- [ ] If you're unable to run "EFI Shell" from BIOS, place "SHELLX64.EFI" on your ESP root (not EFI dir).
+      Some old AMI Aptio firmwares (eg. v2.00) need this.
+
+- [ ] Still having trouble accessing Shell via Firmware?
+      Install Clover to Bootable USB FlashDisk using BDUtility.exe under Windows then boot from it.
+      Run UEFI Shell provided by Clover.
+
 --------------------------------------------------------------------------------------------
 
 ### Credits
