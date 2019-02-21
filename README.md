@@ -59,35 +59,37 @@ However, following this project you have to meet conditions below:
 --------------------------------------------------------------------------------------------
 
 ### Legacy-GPT Installation
-Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/sda1 (EFI System Partition). Check with Terminal: `$ sudo blkid` or `sudo fdisk -l`
+Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/sda1 (EFI System Partition).
+Check with Terminal: `$ sudo blkid` or `sudo fdisk -l`
 1. Clone the repo, located on ~/CloverEFI-4MU (Home)
 2. Run these Terminal commands:
    
-   // _Marking /dev/sda as active partition (also useful for MBR scheme)
+   // <i>Marking /dev/sda as active partition (also useful for MBR scheme)</i>
    - $ `cd ~/CloverEFI-4MU/BootSectors`
    - $ `sudo dd if="/dev/sda" bs=512 count=1 >origMBR`
    - $ `cp origMBR newMBR`
    - $ `sudo dd if=boot0af of=newMBR bs=440 count=1 conv=notrunc`
 
-   // _Set /dev/sda1 as Primary Boot Record (PBR)
+   // <i>Set /dev/sda1 as Primary Boot Record (PBR)</i>
    - $ `sudo dd if="/dev/sda1" bs=512 count=1 >origPBR`
    - $ `cp boot1f32 newPBR`
    - $ `sudo dd if=origPBR of=newPBR skip=3 seek=3 bs=1 count=87 conv=notrunc`
 
-   // _Writing bootsector's changes
+   // <i>Writing bootsector's changes</i>
    - $ `sudo dd if=newPBR of="/dev/sda1" bs=512 count=1`
    - $ `sudo dd if=newMBR of="/dev/sda" bs=512 count=1 conv=nocreat,notrunc`
 
 3. Installing Clover on EFI System Partition (ESP)
-   (Please note that `\EFI\BOOT` dir is not always empty, some linux distros or android maybe placing `grub, kernel or ramdisk` here. If this is your case, just copy Clover `BOOTX64.efi` file, not replacing a whole dir).
+   (Please note that `\EFI\BOOT` dir is not always empty, some linux distros or android maybe placing `grub, kernel or ramdisk` here.
+   If this is your case, just copy Clover `BOOTX64.efi` file, not replacing a whole dir).
 
    (a) Option 1 via Command Line
-   // _Mounting EFI System Partition
+   // <i>Mounting EFI System Partition</i>
    - $ `cd ~/`
    - $ `mkdir esp`
    - $ `sudo mount -t vfat /dev/sda1 esp`
 
-   // _Copying Clover required files (BOOT & CLOVER)
+   // <i>Copying Clover required files (BOOT & CLOVER)</i>
    - $ `cd ~/CloverEFI-4MU`
    - $ `sudo cp boot ~/esp`
    - $ `sudo cp -r EFI/BOOT ~/esp/EFI`
