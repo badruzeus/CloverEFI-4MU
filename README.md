@@ -60,7 +60,7 @@ However, following this project you have to meet conditions below:
 
 ### Legacy-GPT Installation
 Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/sda1 (EFI System Partition).
-Check with Terminal: `$ sudo blkid` or `sudo fdisk -l`
+<br> Check with Terminal: `$ sudo blkid` or `sudo fdisk -l`<br/>
 1. Clone the repo, located on ~/CloverEFI-4MU (Home)
 2. Run these Terminal commands:
    
