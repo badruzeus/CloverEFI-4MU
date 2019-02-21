@@ -80,8 +80,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
    - $ `sudo dd if=newMBR of="/dev/sda" bs=512 count=1 conv=nocreat,notrunc`
 
 3. Installing Clover on EFI System Partition (ESP)
-   <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros maybe placing `grub, kernel or ramdisk` here.<br/>
-   <br>If this is your case, just copy `BOOTX64.efi` file, not replacing a whole dir).<br/>
+   <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros maybe placing `grub, kernel or ramdisk` here. If this is your case, just copy `BOOTX64.efi` file, not replacing a whole dir).<br/>
 
    (a) Option 1 via Command Line
    <br>// <i>Mounting EFI System Partition</i><br/>
@@ -95,7 +94,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
    - $ `sudo cp -r EFI/BOOT ~/esp/EFI`
    - $ `sudo cp -r EFI/CLOVER ~/esp/EFI`
 
-   (a) Option 2 via File Manager (GUI)
+   (b) Option 2 via File Manager (GUI)
    - Mount ESP as point (a) first
    - Terminal: $ `sudo [FileManager]` // File manager could be nautilus, thunar, etc.
    - Manually copy-paste required files as point (a), be careful!
@@ -108,17 +107,15 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
 - [ ] Depends on your UEFI firmware, for adding CLOVER as "New Boot Entry" is usually:
    - `fs0:\efi\clover\cloverx64.efi` or
    - `\efi\clover\cloverx64.efi`
-   <br>This is applicable if your firmware has "Boot Entry" Options.<br/>
+<br>This is applicable if your firmware has "Boot Entry" Options.<br/>
 
-- [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS).
-      <br>On this case, you need manually adding Entry via UEFI Shell.<br/>
-      <br>For example adding Clover Entry located on FSX (FSX could be FS0, FS1, etc. depends on your ESP):<br/>
-      <br> > `map FS*`<br/>
-      <br> > `bcfg boot dump`<br/>
-      <br><i>// If `02` is last Boot Entry, add Clover on `03`:</i><br/>
-      <br> > `bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"`<br/>
-      <br> <i>// OFC, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..</i><br/>
-      <br> If Clover is not set as 1st boot order, you need pressing Combo key (could be F12, Esc, etc) and manually select it once computer powered on.<br/>
+- [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS). On this case, you need manually adding Entry via UEFI Shell. For example adding Clover Entry located on FSX (FSX could be FS0, FS1, etc. depends on your ESP):
+   <br> > `map FS*`<br/>
+   <br> > `bcfg boot dump`<br/>
+   <br><i>// If `02` is last Boot Entry, add Clover on `03`:</i><br/>
+   <br> > `bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"`<br/>
+   <br> <i>// OFC, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..</i><br/>
+   <br> If Clover is not set as 1st boot order, you need pressing Combo key (could be F12, Esc, etc) and manually select it once computer powered on.<br/>
 
 - [ ] If you're unable to run "EFI Shell" from BIOS, place "SHELLX64.EFI" on your ESP root (not EFI dir).
       <br>Some old AMI Aptio firmwares (eg. v2.00) need this.<br/>
