@@ -109,10 +109,10 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
    - `\efi\clover\cloverx64.efi`
 
 - [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS). On this case, you need manually adding Entry via UEFI Shell. For example adding Clover Entry located on FS0 (could be FS1, FS2 etc. depends on ESP):
-<br> > `map FS*`<br/>
-<br> > `bcfg boot dump`<br/>
+- `map FS*`
+- `bcfg boot dump`
 <br><i>// If `02` is last Boot Entry, add Clover on `03`:</i><br/>
-<br> > `bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"`<br/>
+- `bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"`
 <br> <i>// OFC, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..</i><br/>
 <br> If Clover is not set as 1st boot order, you need pressing Combo key (could be F12, Esc, etc) and manually select it once computer powered on.<br/>
 
