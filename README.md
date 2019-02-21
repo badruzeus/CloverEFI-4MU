@@ -80,11 +80,11 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
    - $ `sudo dd if=newMBR of="/dev/sda" bs=512 count=1 conv=nocreat,notrunc`
 
 3. Installing Clover on EFI System Partition (ESP)
-   <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros or android maybe placing `grub, kernel or ramdisk` here.
-   If this is your case, just copy Clover `BOOTX64.efi` file, not replacing a whole dir).<br/>
+   <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros maybe placing `grub, kernel or ramdisk` here.<br/>
+   <br>If this is your case, just copy `BOOTX64.efi` file, not replacing a whole dir).<br/>
 
    (a) Option 1 via Command Line
-   // <i>Mounting EFI System Partition</i>
+   <br>// <i>Mounting EFI System Partition</i><br/>
    - $ `cd ~/`
    - $ `mkdir esp`
    - $ `sudo mount -t vfat /dev/sda1 esp`
@@ -99,7 +99,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
    - Mount ESP as point (a) first
    - Terminal: $ `sudo [FileManager]` // File manager could be nautilus, thunar, etc.
    - Manually copy-paste required files as point (a), be careful!
-   - Terminal: $ `sudo umount ~/esp` if all have done.
+   - Terminal: $ `sudo umount ~/esp` (if all have done).
 
 --------------------------------------------------------------------------------------------
 
@@ -118,15 +118,12 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
       <br><i>// If `02` is last Boot Entry, add Clover on `03`:</i><br/>
       <br> > `bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"`<br/>
       <br> <i>// OFC, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..</i><br/>
-      <br> If Clover is not set as 1st boot order, you need pressing Combo key (could be F12, Esc, etc)<br/>
-      <br>and manually select it once computer powered on.<br/>
+      <br> If Clover is not set as 1st boot order, you need pressing Combo key (could be F12, Esc, etc) and manually select it once computer powered on.<br/>
 
 - [ ] If you're unable to run "EFI Shell" from BIOS, place "SHELLX64.EFI" on your ESP root (not EFI dir).
       <br>Some old AMI Aptio firmwares (eg. v2.00) need this.<br/>
 
-- [ ] Still having trouble accessing Shell via Firmware?
-      <br>Install Clover to Bootable USB FlashDisk using BDUtility.exe under Windows then boot from it.<br/>
-      <br>Run UEFI Shell provided by Clover.<br/>
+- [ ] Still having trouble accessing Shell via Firmware? Install Clover to Bootable USB FlashDisk using BDUtility.exe under Windows then boot from it. Run UEFI Shell provided by Clover.
 
 --------------------------------------------------------------------------------------------
 
