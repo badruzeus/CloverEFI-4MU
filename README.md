@@ -108,7 +108,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
    - `fs0:\efi\clover\cloverx64.efi` or
    - `\efi\clover\cloverx64.efi`
 
-- [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS). On this case, you need manually adding Entry via UEFI Shell. For example adding Clover Entry located on FSX (FSX could be FS0, FS1, etc. depends on your ESP):
+- [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS). On this case, you need manually adding Entry via UEFI Shell. For example adding Clover Entry located on FS0 (could be FS1, FS2 etc. depends on ESP):
 <br> > `map FS*`<br/>
 <br> > `bcfg boot dump`<br/>
 <br><i>// If `02` is last Boot Entry, add Clover on `03`:</i><br/>
