@@ -22,25 +22,20 @@ Some of Clover features are:
 ### Requirements
 However, following this method you have to meet conditions below:
 - [x] Desktop PC or Laptop with Legacy or UEFI (GPT partition scheme is recommended)
-- [x] Make sure that your PC is able to reach Clover GUI:
-      Create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows.
-   <p>Then boot from it (for troubleshooting graphics related issue)
+- [x] Make sure that your PC is able to reach Clover GUI. Create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows. Then boot from it (for troubleshooting graphics related issue)
 - [x] Basic knowledge about BIOS (Firmware) configuration, partitioning scheme, OS Installation
 - [x] Pre-installed Ubuntu Linux (and it's flavours) or Live Mode
-- [x] "Internal EFI Partition" backup.
-- [x] If you're not sure; install it to EFI Partition on USB FlashDisk with GPT scheme.
-   <p>Using gParted create 200MB partition, Manage Flags: boot,esp.
+- [x] "Internal EFI Partition" backup (to a safe place).
 
 --------------------------------------------------------------------------------------------
 
-### Pre-Requirements
+### Before You Begin
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
-2. My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes` (Optional)
-   - Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
+2. My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes` (Optional). Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
 3. Then, just follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=YPWWinxwOcY) below: (be really carefull when accessing EFI Partition with root access)
  
    [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/img/CloverEFI-4MU.png)](https://www.youtube.com/watch?v=YPWWinxwOcY)
-
+4. If you're not sure; install it to EFI Partition on USB FlashDisk with GPT scheme. Using gParted create 200MB partition, Manage Flags: boot,esp.
 --------------------------------------------------------------------------------------------
 
 ### Manual Installation on GUID Partition Table (GPT)
@@ -55,7 +50,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
 	- $ `sudo dd if=newPBR of="/dev/sda1" bs=512 count=1`
  
 2. Placing Clover on EFI System Partition (ESP)
-   <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros maybe placing `grub, kernel or ramdisk` here. If this is your case, just copy `BOOTX64.efi` file, not replacing a whole dir).<br/>
+   <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros maybe placing `grub, kernel, etc.` here. If this is your case, just copy `BOOTX64.efi` file, not replacing a whole dir).<br/>
  
 	a. Option 1 via Command Line
 	// <i>Mounting EFI System Partition</i><br/>
