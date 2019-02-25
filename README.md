@@ -7,7 +7,7 @@ But if you prefer using simpler methods with automated (or guided) steps, I gues
 --------------------------------------------------------------------------------------------
 
 ### What is Clover?
-<img src="/img/CloverEFI-Bootloader.png?raw=true" alt="Clover EFI Bootloader" align="right">
+<img src="/extras/img/CloverEFI-Bootloader.png?raw=true" alt="Clover EFI Bootloader" align="right">
 
 Clover is one of bootloaders developed by Slice, Apianti, BlackOSX, Dmazar, Blusseau, and other devs with great community for booting OS X, Windows and Linux on Mac or PC with UEFI / BIOS firmware.
  
@@ -31,10 +31,10 @@ However, following this method you have to meet conditions below:
 
 ### Before You Begin
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
-2. My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes` (Optional). Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/docs/How-to-use-Clover-Themes.txt) for Theming how to
-3. Then, just follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=YPWWinxwOcY) below: (be really carefull when accessing EFI Partition with root access)
+2. My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes` (Optional). Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/extras/How-to-use-Clover-Themes.txt) for Theming how to
+3. Follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=YPWWinxwOcY) below, or skip to detail methods below:
  
-   [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/img/CloverEFI-4MU.png)](https://www.youtube.com/watch?v=YPWWinxwOcY)
+   [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/extras/img/CloverEFI-4MU.png)](https://www.youtube.com/watch?v=YPWWinxwOcY)
 4. If you're not sure; install it to EFI Partition on USB FlashDisk with GPT scheme. Using gParted create 200MB partition, Manage Flags: boot,esp.
 --------------------------------------------------------------------------------------------
 
