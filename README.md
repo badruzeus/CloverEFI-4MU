@@ -87,7 +87,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
 ### Bugs & Troubleshooting
 - [ ] Press "F1" for Clover Help (Shortcut keys, Functions, etc.)
 - [ ] Depends on your UEFI firmware, for adding CLOVER as "New Boot Entry" is usually:
-   - `fsX:\efi\clover\cloverx64.efi` (fsX = fs0, fs1, fs2, etc), or just
+   - `fsX:\efi\clover\cloverx64.efi` // (fsX = fs0, fs1, fs2, etc), or just
    - `\efi\clover\cloverx64.efi`
 
 - [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS). On this case, you need manually adding Entry via UEFI Shell. For example adding Clover Entry located on FS0 (could be FS1, FS2 etc. depends on ESP):
