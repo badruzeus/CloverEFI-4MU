@@ -32,7 +32,7 @@ However, following this method you have to meet conditions below:
 ### Before You Begin
 1. Clone or Download whole repo: $ `git clone https://github.com/badruzeus/CloverEFI-4MU`
 2. My Clover Themes collection: $ `git clone https://github.com/badruzeus/MyCloverThemes` (Optional). Go to [docs](https://github.com/badruzeus/CloverEFI-4MU/blob/master/extras/How-to-use-Clover-Themes.txt) for Theming how to
-3. Follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=YPWWinxwOcY) below, or skip to detail methods below:
+3. Follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=YPWWinxwOcY) below, or skip to "Manuall Installation" methods on next steps:
  
    [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/extras/img/CloverEFI-4MU.png)](https://www.youtube.com/watch?v=YPWWinxwOcY)
 4. If you're not sure; install it to EFI Partition on USB FlashDisk with GPT scheme. Using gParted create 200MB partition, Manage Flags: boot,esp.
