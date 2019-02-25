@@ -91,12 +91,12 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
    - `\efi\clover\cloverx64.efi`
 
 - [ ] Phoenix or InsydeH2O maybe not including "Boot" Entry Option on it's firmware (BIOS). On this case, you need manually adding Entry via UEFI Shell. For example adding Clover Entry located on FS0 (could be FS1, FS2 etc. depends on ESP):
-- `map FS*`
-- `bcfg boot dump`
-<br><i>// If `02` is last Boot Entry, add Clover on `03`:</i><br/>
-- `bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"`
-<br> <i>// OFC, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..</i><br/>
-<br> If Clover is not set as 1st boot order, you need pressing StartUp key (could be F12, Esc, etc.) and manually select it once computer powered on. Most AMI Aptio BIOS has "Entry Override" option.<br/>
+	- `map FS*`
+	- `bcfg boot dump`
+	<br><i>// If `02` is last Boot Entry, add Clover on `03`:</i><br/>
+	- `bcfg boot add 03 FS0:\EFI\CLOVER\CLOVERX64.efi "Clover EFI Bootloader"`
+	<br><i>// OFC, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..</i><br/>
+	<br> If Clover is not set as 1st boot order, you need pressing StartUp key (could be F12, Esc, etc.) and manually select it once computer powered on. Most AMI Aptio BIOS has "Entry Override" option.<br/>
 
 - [ ] If you're unable to "Launch EFI Shell" from BIOS, place "shellx64.efi or SHELLX64.EFI" on your ESP root (not EFI dir).
 <br>Some old AMI Aptio firmwares (eg. v2.00) need this.<br/>
