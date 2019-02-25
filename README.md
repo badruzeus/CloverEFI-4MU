@@ -98,7 +98,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
 <br> <i>// OFC, you could add another entries eg. Windows Boot Manager, Linux Grub2, etc. on 04, 05..</i><br/>
 <br> If Clover is not set as 1st boot order, you need pressing StartUp key (could be F12, Esc, etc.) and manually select it once computer powered on. Most AMI Aptio BIOS has "Entry Override" option.<br/>
 
-- [ ] If you're unable to run "EFI Shell" from BIOS, place "shellx64.efi" on your ESP root (not EFI dir).
+- [ ] If you're unable to "Launch EFI Shell" from BIOS, place "shellx64.efi or SHELLX64.EFI" on your ESP root (not EFI dir).
 <br>Some old AMI Aptio firmwares (eg. v2.00) need this.<br/>
 
 - [ ] Still having trouble accessing Shell via Firmware? Install Clover to Bootable USB FlashDisk using BDUtility.exe under Windows then boot from it. Run UEFI Shell provided by Clover.
