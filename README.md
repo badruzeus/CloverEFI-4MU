@@ -2,7 +2,7 @@
 ### Introduction
 This repo is actually just documentation about How to install Clover EFI Bootloader using manual methods under Linux (eg. Ubuntu). Clover binary used on this repo is similar to <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/); except additional configs, kexts, etc.
  
-But if you prefer using simpler methods with automated (or guided) steps, I guess you use this [clover-linux-installer](https://github.com/m13253/clover-linux-installer) script by m13253.
+But if you prefer using simpler methods with automated (or guided) steps, I guess you use this [clover-linux-installer](https://github.com/m13253/clover-linux-installer) script by m13253. DWYOR..!!! (Do With Your Own Risk).
 
 --------------------------------------------------------------------------------------------
 
