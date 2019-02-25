@@ -22,10 +22,10 @@ Some of Clover features are:
 ### Requirements
 However, following this method you have to meet conditions below:
 - [x] Desktop PC or Laptop with Legacy or UEFI (GPT partition scheme is recommended)
-- [x] Make sure that your PC is able to reach Clover GUI. Create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows. Then boot from it (for troubleshooting graphics related issue)
-- [x] Basic knowledge about BIOS (Firmware) configuration, partitioning scheme, OS Installation
 - [x] Pre-installed Ubuntu Linux (and it's flavours) or Live Mode
-- [x] "Internal EFI Partition" backup (to a safe place).
+- [x] Basic knowledge about BIOS (Firmware) configuration, partitioning scheme, OS Installation
+- [x] Make sure that your PC is able to boot Clover. For testing purpose; create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows. Then boot from it
+- [x] Make a Backup of "Internal EFI Partition" on a safe place.
 
 --------------------------------------------------------------------------------------------
 
@@ -52,19 +52,19 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
 2. Placing Clover on EFI System Partition (ESP)
    <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros maybe placing `grub, kernel, etc.` here. If this is your case, just copy `BOOTX64.efi` file, not replacing a whole dir).<br/>
  
-	a. Option 1 via Command Line
+	a. Option 1 via <b>Command Line</b>
 	// <i>Mounting EFI System Partition</i><br/>
 	- $ `cd ~/`
 	- $ `mkdir esp`
 	- $ `sudo mount -t vfat /dev/sda1 esp`
  
-	// <i>Copying Clover required files (BOOT & CLOVER)</i>
+	// <i>Copying Clover required files</i>
 	- $ `cd ~/CloverEFI-4MU`
 	- $ `sudo cp boot ~/esp` (not required for MBR)
 	- $ `sudo cp -r EFI/BOOT ~/esp/EFI`
 	- $ `sudo cp -r EFI/CLOVER ~/esp/EFI`
  
-	b. Option 2 via File Manager (GUI)
+	b. Option 2 via <b>File Manager</b> (GUI)
 	- Mount ESP as point (1) first
 	- Terminal: $ `sudo [FileManager]` // File manager could be nautilus, pcmanfm, thunar, etc.
 	- Manually copy-paste required files as point (a), be careful!
