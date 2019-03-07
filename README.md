@@ -60,7 +60,7 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
  
 	// <i>Copying Clover required files</i>
 	- $ `cd ~/CloverEFI-4MU`
-	- $ `sudo cp boot ~/esp` (not required for MBR)
+	- $ `sudo cp boot ~/esp` (not required for GPT)
 	- $ `sudo cp -r EFI/BOOT ~/esp/EFI`
 	- $ `sudo cp -r EFI/CLOVER ~/esp/EFI`
  
