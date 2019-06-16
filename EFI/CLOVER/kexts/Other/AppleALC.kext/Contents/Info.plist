@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>17G8011</string>
+	<string>17G8018</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -3266,6 +3266,26 @@
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Sniki - Realtek ALC 272 for Lenovo B570 and B570e</string>
+					<key>CodecID</key>
+					<integer>283902578</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6gAScfkAFHHCABRx0BAUce
+					EwFHH5ABRwwCAYccMAGHHZABhx6BAYcfAQIX
+					HEACFx1AAhceIQIXHwE=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>18</integer>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
