@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Badruzeus</string>
 	<key>Description</key>
-	<string>Clover dark theme with 3D icons and glowing logo animation. Version: 4.2</string>
+	<string>A dark Clover theme with 3D icons and glowing logo animation. Version: 4.4</string>
 	<key>Theme</key>
 	<dict>
 		<key>Anime</key>
@@ -73,19 +73,6 @@
 			<key>Type</key>
 			<string>Load</string>
 		</dict>
-		<key>Layout</key>
-		<dict>
-			<key>ButtonOffset</key>
-			<integer>32</integer>
-			<key>SelectionBigWidth</key>
-			<integer>180</integer>
-			<key>TileXSpace</key>
-			<integer>0</integer>
-			<key>TileYSpace</key>
-			<integer>32</integer>
-			<key>Vertical</key>
-			<false/>
-		</dict>
 		<key>Origination</key>
 		<dict>
 			<key>DesignHeight</key>
@@ -100,7 +87,7 @@
 			<key>ChangeNonSelectedGrey</key>
 			<false/>
 			<key>Color</key>
-			<string>0xFFFFFF24</string>
+			<string>0xFFFFFF20</string>
 			<key>OnTop</key>
 			<false/>
 			<key>Small</key>
@@ -108,7 +95,7 @@
 		</dict>
 	</dict>
 	<key>Version</key>
-	<string>4.2</string>
+	<string>4.4</string>
 	<key>Year</key>
 	<string>2019</string>
 </dict>
