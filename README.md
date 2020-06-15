@@ -1,6 +1,6 @@
 # CloverEFI-4MU
 ### Introduction
-This repo is actually just documentation about How to install Clover EFI Bootloader using manual methods under Linux (eg. Ubuntu). Clover binary used on this repo is similar to <b>Official SourceForge</b> [here](https://sourceforge.net/projects/cloverefiboot/files/Bootable_ISO/); except additional configs, kexts, etc.
+This repo is actually just documentation about How to install Clover EFI Bootloader using manual methods under Linux (eg. Ubuntu). Clover binary used on this repo is similar to <b>Official GitHub</b> [here](https://github.com/CloverHackyColor/CloverBootloader); except additional configs, kexts, etc.
  
 But if you prefer using simpler methods with automated (or guided) steps, I guess you use this [clover-linux-installer](https://github.com/m13253/clover-linux-installer) script by m13253. DWYOR..!!! (Do With Your Own Risk).
 
@@ -22,8 +22,8 @@ Some of Clover features are:
 ### Requirements
 However, following this method you have to meet conditions below:
 - [x] Desktop PC or Laptop with Legacy or UEFI (GPT partition scheme is recommended)
-- [x] Pre-installed Ubuntu Linux (and it's flavours) or Live Mode
-- [x] Basic knowledge about BIOS (Firmware) configuration, partitioning scheme, OS Installation
+- [x] Pre-installed Ubuntu Linux (and it's flavours), Debian or Live Mode
+- [x] Basic knowledge about BIOS (Firmware) configuration, partition scheme, OS Installation
 - [x] Make sure that your PC is able to boot Clover. For testing purpose; create USB Clover with [this Tool](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) via Windows. Then boot from it
 - [x] Make a Backup of "Internal EFI Partition" on a safe place.
 
@@ -35,7 +35,7 @@ However, following this method you have to meet conditions below:
 3. Follow provided ["Video Tutorial"](https://www.youtube.com/watch?v=YPWWinxwOcY) below, or skip to "Manuall Installation" methods on next steps:
  
    [![CloverEFI-4MU](https://github.com/badruzeus/CloverEFI-4MU/raw/master/extras/img/CloverEFI-4MU.png)](https://www.youtube.com/watch?v=YPWWinxwOcY)
-4. If you're not sure; install it to EFI Partition on USB FlashDisk with GPT scheme. Using gParted create 200MB partition, Manage Flags: boot,esp.
+4. If you're not sure; install it to EFI Partition on USB FlashDisk with GPT scheme. Using gParted create 200MB partition, Manage Flags as: boot,esp.
 --------------------------------------------------------------------------------------------
 
 ### Manual Installation on GUID Partition Table (GPT)
@@ -45,43 +45,36 @@ Assummed "Target_Disk" is /dev/sda (Whole Disk) and "Target_Partition" is /dev/s
 1. Set /dev/sda1 as Primary Boot Record / PBR (for Legacy and GPT)
 	- $ `cd ~/CloverEFI-4MU/BootSectors`
 	- $ `sudo dd if="/dev/sda1" bs=512 count=1 >origPBR`
+	- $ `sudo dd if="/dev/sda" bs=512 count=1 >origMBR`
 	- $ `cp boot1f32 newPBR`
-	- $ `sudo dd if=origPBR of=newPBR skip=3 seek=3 bs=1 count=87 conv=notrunc`
+	- $ `cp origMBR newMBR`
 	- $ `sudo dd if=newPBR of="/dev/sda1" bs=512 count=1`
+	- $ `sudo dd if=newMBR of="/dev/sda" bs=512 count=1 conv=nocreat,notrunc`
+	- $ `sudo dd if=origPBR of=newPBR skip=3 seek=3 bs=1 count=87 conv=notrunc`
+	- $ `sudo dd if=boot0af of=newMBR bs=440 count=1 conv=notrunc`
+	
  
 2. Placing Clover on EFI System Partition (ESP)
    <br>(Please note that `\EFI\BOOT` dir is not always empty, some linux distros maybe placing `grub, kernel, etc.` here. If this is your case, just copy `BOOTX64.efi` file, not replacing a whole dir).<br/>
  
 	a. Option 1 via <b>Command Line</b>
 	// <i>Mounting EFI System Partition</i><br/>
-	- $ `cd ~/`
-	- $ `mkdir esp`
-	- $ `sudo mount -t vfat /dev/sda1 esp`
+	- $ `mkdir ~/esp`
+	- $ `sudo mount -t vfat /dev/sda1 ~/esp`
  
 	// <i>Copying Clover required files</i>
 	- $ `cd ~/CloverEFI-4MU`
-	- $ `sudo cp boot ~/esp` (not required for GPT)
+	- $ `sudo cp boot ~/esp`
 	- $ `sudo cp -r EFI/BOOT ~/esp/EFI`
 	- $ `sudo cp -r EFI/CLOVER ~/esp/EFI`
  
 	b. Option 2 via <b>File Manager</b> (GUI)
-	- Mount ESP as point (1) first
+	- Mount ESP as Option (1) first
 	- Terminal: $ `sudo [FileManager]` // File manager could be nautilus, pcmanfm, thunar, etc.
 	- Manually copy-paste required files as point (a), be careful!
 	- Terminal: $ `sudo umount ~/esp` (if all have done).
  
-### Manual Installation on Master Board Record (MBR)
-(A risk if you have legacy Windows or Linux installed; current Boot Manager (on bootsector) of Active Partition will be overrided by Clover. Currently only macOS with HFS+ / APFS are supported, but it's read-only partition if you're running Linux System. Not sure why are you still using MBR If you could install any 64-bit Operating System with GPT #ATM)
  
-1. Marking /dev/sda as active partition
-	- $ `cd ~/CloverEFI-4MU/BootSectors`
-	- $ `sudo dd if="/dev/sda" bs=512 count=1 >origMBR`
-	- $ `cp origMBR newMBR`
-	- $ `sudo dd if=boot0af of=newMBR bs=440 count=1 conv=notrunc`
-	- $ `sudo dd if=newMBR of="/dev/sda" bs=512 count=1 conv=nocreat,notrunc`
- 
-2. Copy boot binary & EFI dir (contains BOOT/, CLOVER/) to root of System Partition (eg. /Volumes/Macintosh\ HD/EFI).
-
 --------------------------------------------------------------------------------------------
 
 ### Bugs & Troubleshooting

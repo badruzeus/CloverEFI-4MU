@@ -5,7 +5,7 @@
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
-		<true/>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
@@ -21,7 +21,7 @@
 				<key>DeleteUnused</key>
 				<true/>
 				<key>FixADP1</key>
-				<true/>
+				<false/>
 				<key>FixAirport</key>
 				<true/>
 				<key>FixDarwin</key>
@@ -29,7 +29,7 @@
 				<key>FixDisplay</key>
 				<true/>
 				<key>FixHPET</key>
-				<true/>
+				<false/>
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixLAN</key>
@@ -57,7 +57,7 @@
 					<key>Comment</key>
 					<string>change EC0 to EC</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					RUMwXw==
@@ -71,7 +71,7 @@
 					<key>Comment</key>
 					<string>change AZAL to HDEF</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					QVpBTA==
@@ -85,7 +85,7 @@
 					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					SERBUw==
@@ -99,7 +99,7 @@
 					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					SEVDSQ==
@@ -113,7 +113,7 @@
 					<key>Comment</key>
 					<string>change MEI to IMEI</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					TUVJXw==
@@ -251,12 +251,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_vista</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Ubuntu 18.10</string>
+					<string>Ubuntu Linux</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -267,6 +269,8 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_ubuntu</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
@@ -285,6 +289,8 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_phoenix</string>
 				</dict>
 				<dict>
 					<key>Arguments</key>
@@ -349,6 +355,8 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_arch</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
@@ -365,12 +373,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_debian</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Deepin 15.7</string>
+					<string>Deepin Linux</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -381,12 +391,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_deepin</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Elementary 5.0</string>
+					<string>Elementary OS</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -397,6 +409,8 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_eos</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
@@ -413,12 +427,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_fedora</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Kali Linux 2019</string>
+					<string>Kali Linux</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -429,12 +445,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_kali</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Linux Mint 19</string>
+					<string>Linux Mint</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -445,12 +463,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_mint</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Manjaro 17</string>
+					<string>Manjaro Linux</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -461,6 +481,8 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_manjaro</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
@@ -477,12 +499,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_redhat</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>Xubuntu 18.10</string>
+					<string>Xubuntu Linux</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -493,12 +517,14 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_xubuntu</string>
 				</dict>
 				<dict>
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>ZorinOS 12</string>
+					<string>ZorinOS Core</string>
 					<key>Ignore</key>
 					<false/>
 					<key>Path</key>
@@ -509,6 +535,8 @@
 					<string>EFIUUIDP-XXXX-YYYY-ZZZZ-123456ABCDEF</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
+					<key>Image</key>
+          			<string>os_zorin</string>
 				</dict>
 			</array>
 		</dict>
@@ -525,12 +553,14 @@
 			<false/>
 		</dict>
 		<key>PlayAsync</key>
-		<true/>
+		<false/>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
 			<true/>
@@ -547,7 +577,7 @@
 			<key>Inject</key>
 			<true/>
 		</dict>
-		<key>PatchVBios</key>
+		<key>#PatchVBios</key>
 		<true/>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -571,7 +601,7 @@
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NoCaches</key>
-		<true/>
+		<false/>
 	</dict>
 </dict>
 </plist>
